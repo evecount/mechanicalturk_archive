@@ -1,10 +1,14 @@
 # 🏛️ Amazon Mechanical Turk Preservation Archive (2005–2026)
 ### *A Real-Time Digital Archaeology & Archival Effort on MTurk's Final Day*
 
+[![Live Archive](https://img.shields.io/badge/🌐_Live_Mirror-Visit_Archive-success?style=for-the-badge)](https://evecount.github.io/mechanicalturk_archive/)
 [![Status](https://img.shields.io/badge/Status-Permanent%20Shutdown-red.svg)](https://www.mturk.com)
-[![Closure Date](https://img.shields.io/badge/Closure-September%2030%2C%202026-orange.svg)](file:///d:/Mturk_archive/CLOSURE_ANNOUNCEMENT_AND_FAQ.md)
-[![Preserved Pages](https://img.shields.io/badge/Preserved%20Pages-22-blue.svg)](file:///d:/Mturk_archive/pages)
-[![Downloaded Assets](https://img.shields.io/badge/Assets%20Mirrored-57-green.svg)](file:///d:/Mturk_archive/assets)
+[![Closure Date](https://img.shields.io/badge/Closure-September%2030%2C%202026-orange.svg)](CLOSURE_ANNOUNCEMENT_AND_FAQ.md)
+[![Preserved Pages](https://img.shields.io/badge/Preserved%20Pages-22-blue.svg)](pages/)
+[![Downloaded Assets](https://img.shields.io/badge/Assets%20Mirrored-57-green.svg)](assets/)
+
+> 🌐 **Live Web Mirror:** **[https://evecount.github.io/mechanicalturk_archive/](https://evecount.github.io/mechanicalturk_archive/)**  
+> Browse the fully preserved Amazon Mechanical Turk website directly in your browser with complete styling, partner logos, and the historic closure banner intact.
 
 ---
 
@@ -41,7 +45,7 @@ On September 30, 2026, the following notice was published across the MTurk porta
 | **October 30, 2026** | **Grace Period Cutoff** | Final 30-day window for Requesters to approve submitted HITs (or allow auto-approval) and award worker bonuses. Unused prepaid balances refunded within 30 days. |
 | **January 28, 2027** | **Final Data Purge** | Final deadline to download historical transaction history before permanent decommission. |
 
-👉 **Read the verbatim FAQ transcript:** [`CLOSURE_ANNOUNCEMENT_AND_FAQ.md`](file:///d:/Mturk_archive/CLOSURE_ANNOUNCEMENT_AND_FAQ.md)
+👉 **Read the verbatim FAQ transcript:** [`CLOSURE_ANNOUNCEMENT_AND_FAQ.md`](CLOSURE_ANNOUNCEMENT_AND_FAQ.md)
 
 ---
 
