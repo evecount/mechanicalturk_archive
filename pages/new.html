@@ -1,0 +1,635 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+  <head>
+ <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+ <meta name="request_id" content="Http-3u6ltm595ldakrtm5zdz671" />
+ <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="3CYHhcDrKvQKQSiSE8kr56y4zxwuTPjU+K5VS26I79ygVWY+qu/qQWVFgbJzx3Zcb8mRVNyESM8kz5rE15Zw9g==" />
+ <title>New Project | Create | Requester | Amazon Mechanical Turk</title>
+ <link rel="stylesheet" media="screen" href="/assets/flow-bdc1bc8f89c34df69af7041a6c24a09f56d32108aa1214298bfc7e08ae4a71ff.css" />
+ <!--[if IE 6]><link rel="stylesheet" media="screen" href="/assets/ie6-94bb84ac18d5a6d76c0a070187553f5b6665ad725c9f87ff4325b79d9c65be2b.css" /><![endif]-->
+ <!--[if IE 7]><link rel="stylesheet" media="screen" href="/assets/ie-8d95322f25b3474dd0d46b13af86cc542d0b150a05b24c4fb5c9b6ca9ee566de.css" /><![endif]-->
+ <!--[if lt IE 9]><link rel="stylesheet" media="screen" href="/assets/ielt9-22ad9542dc9307e8ab33e67ecf2b8c785a32c024af37138974a836b697abac69.css" /><![endif]-->
+
+ <link type='text/css' href='https://m.media-amazon.com/images/G/01/browser-scripts/us-site-wide-css-beacon/site-wide-6840752908.css' rel='stylesheet'>
+
+ <script src="/assets/application-448cb394fbcb63a74ad6ae79f1884c6c0e281034c3d9bfde7aebdb5a5cd12801.js"></script>
+
+ <link rel="shortcut_icon" href="/assets/favicon-4f56a75f3860c7136ab3a07347e57a7ef06dd84d324d19af0dac6b5f3268e023.ico" />
+ <link rel="icon" href="/assets/favicon-4f56a75f3860c7136ab3a07347e57a7ef06dd84d324d19af0dac6b5f3268e023.ico" />
+ <style>
+   body { margin: 0 !important; }
+  </style>
+</head>
+
+
+<body class="has-maintenance-banner">
+
+  <style>
+  .maintenance-banner {
+    background-color: #ffc107;
+    color: #d32f2f;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    box-sizing: border-box;
+  }
+  .maintenance-banner-headline {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 6px;
+  }
+  .maintenance-banner-body {
+    display: block;
+    font-weight: normal;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .maintenance-banner a {
+    color: #d32f2f;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .maintenance-banner a:hover {
+    color: #b71c1c;
+  }
+</style>
+<div class="maintenance-banner" role="alert" id="maintenance_banner">
+  <div class="maintenance-banner-headline">Mechanical Turk will close September 30, 2026.</div>
+  <div class="maintenance-banner-body">Amazon Mechanical Turk will permanently close on September 30, 2026. All HIT creation and task completion will end on this date. For more information, please visit our <a href="https://www.mturk.com/help" target="_blank" rel="noopener noreferrer">FAQ</a> page.</div>
+</div>
+
+
+  <!-- MTURK.COM HEADER -->
+
+<div id="toolbar-wrapper" class="">
+  <div id="toolbar">
+    <div id="toolbar-right">
+  Sign In: <a href="/signin_options">Requester</a>
+    </div>
+    <div id="toolbar-center">
+    </div>
+  </div>
+</div>
+
+
+
+  <header class='wsp-header' id="nav">
+    <div class="wsp-nav-outer-container">
+      <div class="wsp-nav-inner-container">
+        <a href="/"><img class="wsp-logo-img" alt="MTurk Requester Logo" src="/assets/mturk_requester_logo-6ed3dd6feefa33c874381749c523509953a0c2de712129f4b7e23e7f2f03f94b.svg" /></a>
+        <div class="wsp-navbar-divider hidden-xs-down"></div>
+        <ul class="tabs">
+  <li id="create_tab" class="active"><a class="active" href="/create">Create</a></li>
+  <li id="manage_tab"><a href="/manage">Manage</a></li>
+  <li id="developer_tab"><a href="/developer">Developer</a></li>
+</ul>
+
+      </div>
+    </div>
+    <div class="wsp-nav-inner-container" id="sub-nav">
+        <ul class="sub_nav">
+                      <li class="active"><a class="active" href="/create/projects/new">New Project</a></li>
+  </ul>
+
+    </div>
+  </header>
+
+  <div id="page_body" class="container_main box-shadow">
+    <style>
+  .flash_container {
+    border: 1px solid;
+    border-radius: 2px;
+    width: calc(100% - 27px);
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 15px;
+  }
+
+  .flash_success_background {
+    background-color: rgb(242, 248, 240);
+    border-color: rgb(29, 129, 2);
+  }
+
+  .flash_failure_background {
+    background-color: rgb(253, 243, 241);
+    border-color: rgb(209, 50, 18);
+  }
+
+  .flash_info_background {
+    background-color: rgb(241, 250, 255);
+    border-color: rgb(0, 115, 187);
+  }
+
+  .flash_table {
+    width: unset;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .flash_cell {
+    background-color: transparent;
+    font-size: 14px;
+    text-align: left;
+    padding: 1px;
+    border:none;
+  }
+
+  .flash_text {
+    display: inline;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: black;
+  }
+
+  .flash_subtext {
+    margin-bottom: 0px;
+    color: black;
+  }
+</style>
+
+
+
+    <!-- MESSAGING -->
+    <div id="messaging"><p id="remote_message" class="flash" style="display:none"></p></div>
+
+    <!-- MAIN CONTENT -->
+    <div id="page_content" class="container_16">
+
+      <br>
+
+
+      <div id='default_grid' class="grid_16">
+
+    
+
+    
+
+<style>
+  ul {
+    margin-bottom: 20px;
+    list-style: none outside;
+  }
+  li {
+    line-height: 18px;
+    margin-bottom: 12px;
+  }
+</style>
+
+<h2>Select a customizable template to start a new project</h2>
+
+<div id="new-project-widget" class="widget">
+  <div class="w_template_nav grid_3 alpha">
+    <ul id="slide-pager">
+      <li class="template_tab_nav_section" style="margin-top:10px">Survey</li>
+        <li class="template_tab_nav"><a id="page1" href="javascript:">Survey Link</a></li>
+        <li class="template_tab_nav"><a id="page2" href="javascript:">Survey</a></li>
+      <li class="template_tab_nav_section">Vision</li>
+        <li class="template_tab_nav"><a id="page3" href="javascript:">Image Classification</a></li>
+        <li class="template_tab_nav"><a id="page4" href="javascript:">Bounding Box</a></li>
+        <li class="template_tab_nav"><a id="page5" href="javascript:">Semantic Segmentation</a></li>
+        <li class="template_tab_nav"><a id="page6" href="javascript:">Instance Segmentation</a></li>
+        <li class="template_tab_nav"><a id="page7" href="javascript:">Polygon</a></li>
+        <li class="template_tab_nav"><a id="page8" href="javascript:">Keypoint</a></li>
+        <li class="template_tab_nav"><a id="page9" href="javascript:">Image Contains</a></li>
+        <li class="template_tab_nav"><a id="page10" href="javascript:">Video Classification</a></li>
+        <li class="template_tab_nav"><a id="page11" href="javascript:">Moderation of an Image</a></li>
+        <li class="template_tab_nav"><a id="page12" href="javascript:">Image Tagging</a></li>
+        <li class="template_tab_nav"><a id="page13" href="javascript:">Image Summarization</a></li>
+      <li class="template_tab_nav_section">Language</li>
+        <li class="template_tab_nav"><a id="page14" href="javascript:">Sentiment Analysis</a></li>
+        <li class="template_tab_nav"><a id="page15" href="javascript:">Intent Detection</a></li>
+        <li class="template_tab_nav"><a id="page16" href="javascript:">Collect Utterance</a></li>
+        <li class="template_tab_nav"><a id="page17" href="javascript:">Emotion Detection</a></li>
+        <li class="template_tab_nav"><a id="page18" href="javascript:">Semantic Similarity</a></li>
+        <li class="template_tab_nav"><a id="page19" href="javascript:">Audio Transcription</a></li>
+        <li class="template_tab_nav"><a id="page20" href="javascript:">Conversation Relevance</a></li>
+        <li class="template_tab_nav"><a id="page21" href="javascript:">Document Classification</a></li>
+        <li class="template_tab_nav"><a id="page22" href="javascript:">Translation Quality</a></li>
+        <li class="template_tab_nav"><a id="page23" href="javascript:">Audio Naturalness</a></li>
+      <li class="template_tab_nav_section">Other</li>
+        <li class="template_tab_nav"><a id="page24" href="javascript:">Data Collection</a></li>
+        <li class="template_tab_nav"><a id="page25" href="javascript:">Website Collection</a></li>
+        <li class="template_tab_nav"><a id="page26" href="javascript:">Website Classification</a></li>
+        <li class="template_tab_nav"><a id="page27" href="javascript:">Item Equality</a></li>
+        <li class="template_tab_nav"><a id="page28" href="javascript:">Search Relevance</a></li>
+      <li class="template_tab_nav"><a id="page29" href="javascript:">Other</a></li>
+    </ul>
+  </div>
+
+  <ul class="slides omega" style="width: 99%">
+      <li id="slide1" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="450" data-src="/create/template/920937340?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:450px;text-align:center">
+              <img style="margin-top:150px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/920937340/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide2" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390912?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390912/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide3" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390873?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390873/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide4" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390838?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390838/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide5" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390902?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390902/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide6" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928709013?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928709013/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide7" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928556361?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928556361/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide8" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928478963?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928478963/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide9" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390875?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390875/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide10" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390922?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390922/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide11" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390892?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390892/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide12" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390877?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390877/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide13" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390876?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390876/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide14" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390909?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390909/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide15" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/929448123?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/929448123/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide16" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390845?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390845/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide17" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390866?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390866/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide18" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390905?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390905/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide19" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390836?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390836/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide20" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390850?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390850/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide21" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390860?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390860/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide22" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390917?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390917/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide23" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390811?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390811/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide24" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390855?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390855/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide25" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390933?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390933/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide26" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390929?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390929/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide27" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390889?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390889/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide28" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390894?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390894/start">Sign in to Create Project</a>
+      </li>
+      <li id="slide29" style="display:none">
+        <div class="morsel">
+          <div class="m_cnt">
+            <div class="delayed_load_iframe" data-height="400" data-src="/create/template/928390828?assignmentId=ASSIGNMENT_ID_NOT_AVAILABLE&amp;mode=example&amp;site=requester" style="width:100%;height:400px;text-align:center">
+              <img style="margin-top:133px" src="/assets/spinner-e8144998e0c03f7b738e78fddc80452907a7659467fbaf351d02ca84bdedd6ee.gif" />
+            </div>
+          </div>
+        </div>
+        <a class="btn orange float_right create-project-button-bottom" href="/create/template/928390828/start">Sign in to Create Project</a>
+      </li>
+  </ul>
+
+</div> <!-- end .widget -->
+
+<script>
+
+  function hydrateDelayedIframes() {
+    jQuery('.show .delayed_load_iframe').each( function() {
+
+      var src = this.getAttribute('data-src');
+      jQuery(this).replaceWith( '<iframe width="100%" height="' + 500 + 'px" src="' + src + '" />' );
+
+    });
+  }
+
+  function swapSlides(curSlide,nextSlide) {
+    if ( curSlide == nextSlide ) {
+      return false;
+    }
+    if ( curSlide[0] == nextSlide[0] ) {
+      return false;
+    }
+    jQuery('#slide-pager a').removeClass('active_template');
+    jQuery( nextSlide[0].id.gsub( 'slide', '#slide-pager a#page' )).addClass('active_template');
+    nextSlide.addClass('show');
+    hydrateDelayedIframes();
+    curSlide.hide();
+    nextSlide.show();
+    curSlide.removeClass('show');
+  }
+
+  function gotoSlide(ev) {
+    var curSlide = jQuery('.slides li.show')
+    var nextSlide = jQuery( this.id.gsub('page','#slide') )
+    if ( curSlide[0] == nextSlide[0] ) {
+      return false;
+    }
+    swapSlides(curSlide,nextSlide);
+    return true;
+  }
+
+  jQuery(document).ready( function() {
+    jQuery('#slide-pager a').click( gotoSlide );
+    jQuery('#slide-pager a:first').click();
+    hydrateDelayedIframes();
+  });
+
+</script>
+
+    <div class="clear"></div>
+
+      </div> <!--- end default_grid -->
+      <div class="clear"></div>
+
+    </div> <!-- end page_content -->
+    <div class="clear"></div>
+
+  </div> <!-- end page_body -->
+
+  <div class="clear"></div>
+
+  <div class="wsp-footer-outer-container sticky-footer">
+    <div class="wsp-footer-inner-container">
+      <!-- MTURK.COM FOOTER -->
+<footer class="clearfix">
+  <div class="float_left">
+    <ul class="clearfix">
+      <li><a target="_blank" rel="noopener noreferrer" href="/help">Help</a></li>
+      <li><a href="/pricing">Pricing</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/contact-us">Contact Us</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/legal-licenses">Policies</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/legal-licenses">State Licensing</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/contact-us">Contact Sales</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://blog.mturk.com">Blog</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="/status">Service Health Dashboard</a></li>
+      <li><a target="_blank" href="https://www.amazon.jobs/en">Careers</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/">MTurk.com</a></li>
+      <li><a target="_blank" rel="noopener noreferrer" href="https://www.mturk.com/worker">Workers</a></li>
+      <li><a href="http://twitter.com/amazonmturk" target="_blank" rel="noopener noreferrer">
+        <img border="0" alt="Logo - Twitter" src="/assets/icon_twitter-48e3ad79992279a66b6e9e55ce9d2d14865bb98334acab614ca4cc50ba6a7dde.png" width="13" height="12" /> Follow Us on Twitter</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="clear">&nbsp;</div>
+  <div style="float:right; padding: 10px 0 0 0;">
+    <a href="https://www.amazon.com"><img width="160" height="21" border="0" alt="Logo - Amazon.com" src="/assets/AnAmazonCompany-55233aa550dbf9e4d952083e2dde4cd67a76462053d4e8f3761acba5a9a8a1df.svg" /></a>
+  </div>
+  <div class="copyright">
+    &copy;2005-2026 Amazon.com, Inc. or its Affiliates. All rights reserved.
+    <br />
+  </div>
+</footer>
+
+    </div>
+  </div>
+
+  <div id="modal_space">
+  
+</div>
+<script>
+//<![CDATA[
+
+    $(function() {
+        new InfoMessaging('#PostpaidBannerDiv', '#PostpaidBannerHideButton');
+
+    });
+  
+  $(bindDynamicElements);
+
+//]]>
+</script>
+
+</body>
+</html>

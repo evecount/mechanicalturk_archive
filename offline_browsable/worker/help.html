@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- set content security policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; img-src 'self'; style-src 'self'; font-src 'self'; object-src 'none';"
+    />
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8" />
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Mechanical Turk</title>
+
+    <!-- Start SiteCatalyst code version: H.26. -->
+    <!-- <script src="../assets/assets/js/s_code.js"></script>
+    <script src="../assets/assets/js/omniture.js"></script> -->
+    <!-- Start IE7 Hack -->
+    <!-- <noscript>
+      <img
+        alt=""
+        height="1"
+        src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsmturk/1/H.25.1--NS/0"
+        width="1"
+      />
+    </noscript> -->
+    <!-- End IE7 Hack -->
+    <!-- End SiteCatalyst code version: H.26. -->
+
+    <!-- include the site stylesheet -->
+    <link media="all" rel="stylesheet" href="../assets/assets/css/main.css" />
+    <!-- include jQuery library -->
+    <script src="../assets/assets/js/jquery-3.7.0.min.js" defer></script>
+    <!-- include custom JavaScript -->
+    <script src="../assets/assets/js/jquery.main.js" defer></script>
+
+    <link rel="shortcut_icon" href="../assets/assets/images/favicon.ico" />
+    <link rel="icon" href="../assets/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Maintenance banner -->
+    <div class="maintenance-banner">
+      <div class="maintenance-banner-headline">Mechanical Turk will close September 30, 2026.</div>
+      <div class="maintenance-banner-body">We regularly evaluate our programs, tools, and services and make adjustments based on those assessments. Following an assessment, we've made the decision to close Amazon Mechanical Turk, effective September 30, 2026. Amazon Mechanical Turk will permanently close on September 30, 2026. For Workers and Requesters currently using the service, please visit our <a href="../help.html">FAQ</a> page to learn how you can prepare for this closure.</div>
+    </div>
+    <!-- main container of all the page elements -->
+    <div id="wrapper">
+      <!-- header of the page -->
+      <header id="header">
+        <div class="header-top">
+          <span>Have work that needs human intelligence?</span>
+          <div class="inline-block">
+            <span
+              ><a href="https://requester.mturk.com/signin_options"
+                >Sign in as a Requester</a
+              >
+              | <a href="../index.html">Learn more</a></span
+            >
+          </div>
+        </div>
+        <div class="header-bottom">
+          <!-- page logo -->
+          <strong class="logo">
+            <a href="../worker.html">
+              <img
+                src="../assets/assets/images/worker-logo.svg"
+                alt="Amazon Mechanical Turk"
+              />
+            </a>
+          </strong>
+          <!-- main navigation of the page -->
+          <nav class="menu">
+            <a href="#" class="nav-opener"><span></span></a>
+            <div class="nav-drop">
+              <ul id="nav">
+                <li><a href="../worker.html">Home</a></li>
+                <li><a href="/worker/how-it-works">How It Works</a></li>
+                <li class="active"><a href="/worker/help">Help</a></li>
+              </ul>
+              <a href="https://worker.mturk.com/" class="btn"
+                >Sign in as a Worker</a
+              >
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- contain main informative part of the site -->
+      <main id="main">
+        <!-- extra navigation of the page -->
+        <ul class="second-nav">
+          <li class="active"><a href="/worker/help">FAQs</a></li>
+          <li>
+            <a
+              href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+        <!-- contain the main content of the page -->
+        <div class="container">
+          <section class="faqs content-section gray-line">
+            <h1>FAQs</h1>
+            <h2>About Amazon Mechanical Turk</h2>
+            <ul class="questions">
+              <li><a href="#what_is">What is Amazon Mechanical Turk?</a></li>
+              <li>
+                <a href="#mturk_name_origin"
+                  >Where does the name Mechanical Turk come from?</a
+                >
+              </li>
+              <li><a href="#what_is_hit">What is a HIT?</a></li>
+              <li>
+                <a href="#how_to_register_worker"
+                  >How do I create a Worker account on MTurk?</a
+                >
+              </li>
+              <li>
+                <a href="#edit_contact_information"
+                  >Where can I view and edit my name, email address, and
+                  password?</a
+                >
+              </li>
+              <li>
+                <a href="#edit_us_contact_information"
+                  >My country of residence is the United States. Where can I
+                  view and edit my contact address and bank account
+                  information?</a
+                >
+              </li>
+              <li>
+                <a href="#edit_international_contact_information"
+                  >My country of residence is outside the United States. Where
+                  can I view and edit my contact address and bank account
+                  information?</a
+                >
+              </li>
+            </ul>
+            <h2>Working on HITs</h2>
+            <ul class="questions">
+              <li><a href="#how_complete_hit">How do I complete a HIT?</a></li>
+              <li>
+                <a href="#who_creates_hits"
+                  >Who creates HITs and how are they created?</a
+                >
+              </li>
+              <li>
+                <a href="#how_hits_approved">How do HITs get approved?</a>
+              </li>
+              <li>
+                <a href="#how_time_work_hit"
+                  >How much time do I have to work on a HIT?</a
+                >
+              </li>
+              <li>
+                <a href="#why_throttled"
+                  >Why is the number of HITs I can do each day limited?</a
+                >
+              </li>
+              <li>
+                <a href="#work_rejected"
+                  >My work was rejected, what can I do?</a
+                >
+              </li>
+              <li>
+                <a href="#work_reused"
+                  >Can I re-use the HIT answers that I submit to Requesters for
+                  other purposes?</a
+                >
+              </li>
+              <li>
+                <a href="#published_work_used"
+                  >How can I use the HIT content that Requesters publish?</a
+                >
+              </li>
+              <li>
+                <a href="#how_report_inappropriate"
+                  >How do I report a HIT that violates the Amazon Mechanical
+                  Turk policies?</a
+                >
+              </li>
+              <li>
+                <a href="#keep_computer_secure"
+                  >Should I keep my computer secure while using Amazon
+                  Mechanical Turk?</a
+                >
+              </li>
+            </ul>
+            <h2>Getting Paid</h2>
+            <ul class="questions">
+              <li><a href="#how_paid">How do I get paid?</a></li>
+              <li>
+                <a href="#how_confirm_bank_account"
+                  >How do I confirm or add a new bank account?</a
+                >
+              </li>
+              <li>
+                <a href="#no_transfer_bank_account"
+                  >What if I don't want to transfer my earnings to my bank
+                  account?</a
+                >
+              </li>
+              <li><a href="#what_bonus">What is a bonus payment?</a></li>
+            </ul>
+            <h2>Tax Information and Identity Verification for US Residents</h2>
+            <ul class="questions">
+              <li>
+                <a href="#tax_why_tax_info"
+                  >Why am I asked to provide my tax information?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_work_no_form"
+                  >Can I work on HITs if I don't provide my tax information?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_pay_taxes_on_earnings"
+                  >Do I have to pay taxes on earnings from Amazon Mechanical
+                  Turk?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_what_information_provided"
+                  >What information will I need to provide in the tax
+                  information interview?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_what_is_electronic_signature"
+                  >What does electronic signature mean?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_consent_electronic_signature"
+                  >Do I have to consent to provide an electronic signature?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_can_you_help"
+                  >Can you help me complete the tax information interview?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_how_long_idv_takes"
+                  >How long does identity verification take?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_what_happens_if_idv_fails"
+                  >What happens if identity verification fails?</a
+                >
+              </li>
+              <li>
+                <a href="#tax_how_are_you_protecting_my_data"
+                  >How are you protecting my data and my privacy when I use this
+                  service?</a
+                >
+              </li>
+            </ul>
+            <h2>
+              Tax Information and Identity Verification for Non-U.S.,
+              International Workers
+            </h2>
+            <ul class="questions">
+              <li>
+                <a href="#intl_tax_why_tax_info"
+                  >Why am I asked to provide my tax information?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_work_no_form"
+                  >Can I work on HITs if I don't provide my tax information?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_us_citizen_live_abroad"
+                  >I'm a U.S. citizen living outside the U.S. and I am getting
+                  the message "Tax Status Not Supported".</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_what_information_provided"
+                  >What information will I need to provide in the tax
+                  information interview?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_what_is_electronic_signature"
+                  >What does electronic signature mean?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_consent_electronic_signature"
+                  >Do I have to consent to provide an electronic signature?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_can_you_help"
+                  >Can you help me complete the tax information interview?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_subject_to_tax_reporting"
+                  >Will I be subject to U.S. tax reporting by the U.S. tax
+                  authority (Internal Revenue Service, "IRS")?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_pay_taxes_on_earnings"
+                  >Do I have to pay taxes on my Mechanical Turk earnings?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_how_long_idv_takes"
+                  >How long does identity verification take?</a
+                >
+              </li>
+              <li>
+                <a href="#intl_tax_what_happens_if_idv_fails"
+                  >What happens if identity verification fails?
+                </a>
+              </li>
+              <li>
+                <a href="#intl_tax_how_are_you_protecting_my_data"
+                  >How are you protecting my data and my privacy when I use this
+                  service?</a
+                >
+              </li>
+            </ul>
+            <h2>MTurk Master Worker</h2>
+            <ul class="questions">
+              <li>
+                <a href="#what_is_master_worker"
+                  >What is a Mechanical Turk Master Worker?</a
+                >
+              </li>
+              <li>
+                <a href="#how_receive_masters_qualification"
+                  >How do I receive the Masters Qualification?</a
+                >
+              </li>
+              <li>
+                <a href="#can_masters_qualification_be_revoked"
+                  >Can the Masters Qualification be revoked?</a
+                >
+              </li>
+            </ul>
+            <h2>Premium Qualifications</h2>
+            <ul class="questions">
+              <li>
+                <a href="#how_participate_in_premium_qualifications"
+                  >How can I participate in the Premium Qualifications
+                  feature?</a
+                >
+              </li>
+              <li>
+                <a href="#are_profile_tasks_required"
+                  >Do I have to complete Profile Information HITs?</a
+                >
+              </li>
+              <li>
+                <a href="#how_update_profile_entries"
+                  >How can I change or have my Premium Qualifications
+                  removed?</a
+                >
+              </li>
+              <li>
+                <a href="#how_view_profile_info"
+                  >Where can I view the Profile information HITs I have
+                  submitted?</a
+                >
+              </li>
+              <li>
+                <a href="#amazon_profile_info_use"
+                  >How does Amazon use my Profile Information HITs?</a
+                >
+              </li>
+            </ul>
+          </section>
+          <div class="answers">
+            <h2>About Amazon Mechanical Turk</h2>
+            <h3 id="what_is">What is Amazon Mechanical Turk?</h3>
+            <p>
+              Amazon Mechanical Turk (MTurk) is a marketplace for completion of
+              virtual tasks that requires human intelligence. The Mechanical
+              Turk service gives businesses access to a diverse, on-demand,
+              scalable workforce and gives Workers a selection of thousands of
+              tasks to complete whenever it's convenient.
+            </p>
+            <p>
+              Amazon Mechanical Turk was created because we know there are many
+              things human beings do much more effectively than computers, such
+              as identifying objects in a photo or video, performing data
+              de-duplication, transcribing audio recordings, or researching data
+              details. Requester customers are able to send these tasks to the
+              Mechanical Turk workforce. Traditionally, these tasks have been
+              accomplished by hiring a large temporary workforce (which is time
+              consuming, expensive, and difficult to scale) or have gone undone.
+            </p>
+            <h3 id="mturk_name_origin">
+              Where does the name Mechanical Turk come from?
+            </h3>
+            <p>
+              In 1769, Hungarian nobleman Wolfgang von Kempelen astonished
+              Europe by building a mechanical chess-playing automaton that
+              defeated nearly every opponent it faced. A life-sized wooden
+              mannequin, adorned with a fur-trimmed robe and a turban,
+              Kempelen’s “Turk” was seated behind a cabinet and toured Europe
+              confounding such brilliant challengers as Benjamin Franklin and
+              Napoleon Bonaparte. To persuade skeptical audiences, Kempelen
+              would slide open the cabinet’s doors to reveal the intricate set
+              of gears, cogs and springs that powered his invention. He
+              convinced them that he had built a machine that made decisions
+              using artificial intelligence. What they did not know was the
+              secret behind the Mechanical Turk: a chess master cleverly
+              concealed inside.
+            </p>
+            <h3 id="what_is_hit">What is a HIT?</h3>
+            <p>
+              A Human Intelligence Task, or HIT, is a question that needs an
+              answer. A HIT represents a single, self-contained, virtual task
+              that a Worker can work on, submit an answer, and collect a reward
+              for completing. HITs are created by Requester customers in order
+              to be completed by Worker customers.
+            </p>
+            <h3 id="how_to_register_worker">
+              How do I create a Worker account on MTurk?
+            </h3>
+            <p>
+              Click the "Get Started with Amazon Mechanical Turk" link in the
+              upper right corner of the
+              <a href="http://worker.mturk.com" target="_blank"
+                >Worker website</a
+              >
+              to fill out an account request. You will be asked to provide your
+              name, email address, and password. In addition, you will be asked
+              to agree to the
+              <a href="/worker/participation-agreement" target="_blank"
+                >Amazon Mechanical Turk Participation Agreement</a
+              >
+              and provide your country of residence. We will review your account
+              request and email you with an outcome within 3 business days.
+            </p>
+            <h3 id="edit_contact_information">
+              Where can I view and edit my name, email address, and password?
+            </h3>
+            <p>
+              You can view and edit your account information by accessing your
+              <a href="https://worker.mturk.com/account" target="_blank"
+                >Account Settings</a
+              >
+              page. Your MTurk Worker account is associated with your Amazon.com
+              account so you will be redirected to Amazon.com to change your
+              name, email address, and password.
+            </p>
+            <h3 id="edit_us_contact_information">
+              My country of residence is the United States. Where can I view and
+              edit my contact address and bank account information?
+            </h3>
+            <p>
+              You can view and edit your
+              <a
+                href="https://payments.amazon.com/sdui/sdui/contactinfo"
+                target="_blank"
+                >contact address</a
+              >
+              via Amazon Payments. You can change your bank account information
+              <a href="https://worker.mturk.com/direct_deposit">here.</a>
+            </p>
+            <h3 id="edit_international_contact_information">
+              My country of residence is outside the United States. Where can I
+              view and edit my contact address and bank account information?
+            </h3>
+            <p>
+              You can view and edit your
+              <a
+                href="https://amazon.com/gp/css/account/address/view.html"
+                target="_blank"
+                >contact address</a
+              >
+              on Amazon.com. If you have the option to transfer your earnings to
+              your local bank account, you can change your bank account
+              information
+              <a href="https://worker.mturk.com/direct_deposit">here.</a>
+            </p>
+            <h2>Working on HITs</h2>
+            <h3 id="how_complete_hit">How do I complete a HIT?</h3>
+            <p>
+              To work on a HIT, sign in to the
+              <a href="http://worker.mturk.com" target="_blank"
+                >Worker website</a
+              >
+              and visit the HITs page. There you will see a list of HITs you are
+              qualified to work on. Click on the "Accept &amp; Work" button for
+              the HIT you want to work on. Complete the HIT according to the
+              Requester instructions, and click the "Submit HIT" button. After
+              you submit your results for the HIT, another similar HIT will be
+              presented for you to accept.
+            </p>
+            <h3 id="who_creates_hits">
+              Who creates HITs and how are they created?
+            </h3>
+            <p>
+              Requesters have a great deal of control over the content and
+              design of their HITs. In some cases, HITs created by Requesters
+              may be hosted externally on their own servers instead of systems
+              managed by Amazon Mechanical Turk. Because MTurk isn't directly
+              involved in the creation of HITs posted by Requesters, you should
+              always take steps to protect yourself from scams and phishing
+              attempts. For example, do not respond to HITs that ask you to
+              provide your email address, password, or other personal data. When
+              MTurk asks you for your Amazon sign-in information the URL in your
+              browser will end with amazon.com. If a Requester's HIT appears
+              suspicious or violates our
+              <a href="/worker/acceptable-use-policy" target="_blank"
+                >Acceptable Use Policy</a
+              >, please use the "Report this HIT" link on the HIT preview page
+              or the HIT page itself and select "Policy Violation" to report it.
+            </p>
+            <h3 id="how_hits_approved">How do HITs get approved?</h3>
+            <p>
+              Requesters determine whether to approve your work and pay you
+              within 30 days after you submit your Human Intelligence Tasks
+              (HITs). Amazon Mechanical Turk does not determine whether or when
+              to approve or reject HITs and does not estimate when your HITs
+              will be approved. Completing HITs accurately will help ensure that
+              Requesters will want you to continue to work for them. Read
+              instructions thoroughly, answer HITs accurately, and return HITs
+              you are unable to complete correctly, to build a positive
+              reputation as a Worker. Keep in mind that returned HITs will not
+              affect your rating.
+            </p>
+            <p>
+              In the event you have questions about the content of a HIT or the
+              approval status, you can
+              <a href="#work_rejected" target="_blank"
+                >contact the Requester directly.</a
+              >
+            </p>
+            <h3 id="how_time_work_hit">
+              How much time do I have to work on a HIT?
+            </h3>
+            <p>
+              Requesters can specify a HIT's "Allotted Time" or how long a
+              Worker can hold on to a HIT. Once the Worker accepts the HIT, a
+              timer begins counting up to the HIT's allotted time. This timer is
+              visible to the Worker on the Worker web site. When the timer
+              reaches the HIT's allotted time, the HIT is made available for
+              other Workers to accept and work on. This ensures that work is
+              completed in a reasonable time period.
+            </p>
+            <h3 id="why_throttled">
+              Why is the number of HITs I can do each day limited?
+            </h3>
+            <p>
+              Amazon Mechanical Turk limits the number of HITs Workers can do on
+              a daily basis as a means of combating conduct that would violate
+              the
+              <a href="/worker/participation-agreement" target="_blank"
+                >Participation Agreement</a
+              >, including, for example, use of robots, scripts or other
+              automated methods to complete HITs and ensuring that Workers are
+              exercising their independent, human judgement to complete HITs.
+            </p>
+            <h3 id="work_rejected">My work was rejected, what can I do?</h3>
+            <p>
+              A Requester may reject your work if they believe the answer is
+              wrong, the HIT was not completed correctly, or that the
+              instructions were not followed. If you believe that your work was
+              rejected in error, you may decide to contact the Requester
+              directly.
+            </p>
+            <h5>You can reach out to a Requester by following these steps:</h5>
+            <ol type="1">
+              <li>
+                Go to the HITs page on the Worker website and search for HITs
+                containing the Requester's name.
+              </li>
+              <li>Click on the title of the HIT in question.</li>
+              <li>
+                On the lower right-hand side of the box, click Contact the
+                Requester of this HIT.
+              </li>
+              <li>Enter your question about the HIT and submit.</li>
+            </ol>
+            <p>
+              Your name and e-mail address will be made available to the
+              Requester when you submit the "Contact the Requester of this HIT"
+              form. After you have sent your message, you may need to wait a few
+              days for a reply. Some Requesters do not monitor their messages
+              every day.
+            </p>
+            <h3 id="work_reused">
+              Can I re-use the HIT answers that I submit to Requesters for other
+              purposes?
+            </h3>
+            <p>
+              No. All work product that you submit to answer a HIT on MTurk is
+              the property of the Requester.
+            </p>
+            <h3 id="published_work_used">
+              How can I use the HIT content that Requesters publish?
+            </h3>
+            <p>
+              You may only use the HIT content that Requesters publish to
+              perform the HIT. Do not share the HIT content (or your answer)
+              with anyone except the Requester, or with MTurk to report abuse.
+            </p>
+            <h3 id="how_report_inappropriate">
+              How do I report a HIT that violates the Amazon Mechanical Turk
+              policies?
+            </h3>
+            <p>
+              If you see a HIT that violates the
+              <a href="/worker/participation-agreement" target="_blank"
+                >Amazon Mechanical Turk Participation Agreement</a
+              >
+              including the
+              <a href="/worker/acceptable-use-policy" target="_blank"
+                >Acceptable Use Policy</a
+              >, please report the HIT by clicking on the "Report this HIT" link
+              so that we can investigate.
+            </p>
+            <h3 id="keep_computer_secure">
+              Should I keep my computer secure while using Amazon Mechanical
+              Turk?
+            </h3>
+            <p>
+              When you complete HITs on Amazon Mechanical Turk, you are
+              accessing the Internet to perform work for Requesters that may not
+              be Amazon. We recommend that you secure your computer with the
+              latest operating system security updates and virus protection
+              software, update your browser and plug-ins with the latest
+              versions, and use caution when directed to other websites or asked
+              to download software.
+            </p>
+            <h2>Getting Paid</h2>
+            <h3 id="how_paid">How do I get paid?</h3>
+            <p>
+              When the Requester approves your submitted HIT, Amazon Mechanical
+              Turk account will automatically display your earnings on the
+              <a href="https://worker.mturk.com/dashboard" target="_blank"
+                >Dashboard</a
+              >
+              and
+              <a href="https://worker.mturk.com/earnings" target="_blank"
+                >Earnings</a
+              >
+              pages.
+            </p>
+            <p>
+              All amounts paid will be in US Dollars or Amazon.com gift cards.
+            </p>
+            <p>
+              You will be able to schedule a transfer of funds from your
+              available earnings balance by visiting the
+              <a href="https://worker.mturk.com/account" target="_blank"
+                >Account Settings</a
+              >
+              page. Your earnings to be automatically transferred to your
+              preferred payment method on the schedule you selected.
+            </p>
+            <p>
+              As a security requirement, if you are a new Worker, there is an
+              initial holding period before rewards are transferred to your
+              earnings balance. Your rewards are held until you have been active
+              on Amazon Mechanical Turk for at least 10 days, starting from the
+              day you submit your first HIT. After this initial holding period,
+              you will be able to transfer funds from your earnings balance by
+              visiting the
+              <a href="https://worker.mturk.com/account" target="_blank"
+                >Earnings</a
+              >
+              page. You are limited to one transfer per calendar day.
+            </p>
+            <h5>
+              <strong
+                >What is the cut-off for earnings to be included in my next
+                scheduled transfer?</strong
+              >
+            </h5>
+            <p>
+              Your transfer balance includes earnings for HITs approved at least
+              one day prior to your transfer date.
+            </p>
+            <h5>
+              <strong>How do I schedule transfers to my bank account?</strong>
+            </h5>
+            <p>
+              Go to the
+              <a href="https://worker.mturk.com/account" target="_blank"
+                >Account Settings</a
+              >
+              page to Manage Payment Preferences and select a transfer schedule
+              for your earnings. You have the option of scheduling payments
+              every 3, 7, 14 or 30 days. If you change your disbursement
+              schedule or method of disbursement (Amazon.com gift card or U.S.
+              bank account transfer), these changes will take effect for your
+              next scheduled transfer.
+            </p>
+            <h4>U.S. Workers</h4>
+            <p>
+              You can transfer your earnings to your U.S. Bank account or to an
+              Amazon.com gift card.
+            </p>
+            <h4>Non-U.S. International Workers</h4>
+            <p>
+              You can transfer earnings to an Amazon.com gift card. Eligible
+              international Workers also receive the option to transfer earnings
+              to a U.S. bank account.
+            </p>
+            <h5 id="how_recv_local_currency">
+              <strong
+                >How do I receive payment in the local currency of my
+                country?</strong
+              >
+            </h5>
+            <p>
+              All Amazon Mechanical Turk earnings will be paid in U.S. Dollars.
+              For Workers eligible for the U.S. bank account transfer option,
+              you have the option of using third party service providers like
+              Hyperwallet in order to receive payment in the local currency of
+              your country. These third party service providers will transfer
+              earnings from your account with such service provider to your
+              local currency bank account. You may use a third party service
+              provider of your choice to transfer earnings from your U.S. bank
+              account to your local currency bank account. You will receive
+              instructions on the Earnings (https://worker.mturk.com/earnings)
+              page when this transfer option is available to you.
+            </p>
+            <h3 id="how_confirm_bank_account">
+              How do I confirm or add a new bank account?
+            </h3>
+            <p>
+              If this is the first time you have transferred money to a bank
+              account through MTurk, you will need to confirm your bank account
+              information. If you want to change your bank account information
+              or if you are a new U.S. worker, follow the instructions to enter
+              your bank routing and account numbers in the form provided.
+            </p>
+            <h3 id="no_transfer_bank_account">
+              What if I don't want to transfer my earnings to my bank account?
+            </h3>
+            <p>
+              If you do not want to transfer your earnings to your bank account,
+              you have the option of transferring your earnings to an Amazon.com
+              gift card.
+            </p>
+            <h3 id="what_bonus">What is a bonus payment?</h3>
+            <p>
+              A bonus is an additional grant of money from a Requester. A
+              Requester can choose to pay a bonus in addition to the stated
+              reward for completing a HIT. Bonuses are granted at the
+              Requester's discretion and are usually paid to Workers who do
+              particularly good work.
+            </p>
+            <h2>Tax Information for US Residents</h2>
+            <h3 id="tax_why_tax_info">
+              Why am I asked to provide my tax information?
+            </h3>
+            <p>
+              We require U.S. Workers to provide valid taxpayer identification
+              information in order to comply with U.S. tax reporting regulations
+              governed by the U.S. tax authority (Internal Revenue Service or
+              "IRS"). You must complete the tax information interview before you
+              can work on HITs and your earnings may be subject to tax reporting
+              with the IRS.
+            </p>
+            <h3 id="tax_work_no_form">
+              Can I work on HITs if I don't provide my tax information?
+            </h3>
+            <p>
+              No. We are required to collect this information before you work on
+              HITs in the Mechanical Turk marketplace.
+            </p>
+            <h3 id="tax_pay_taxes_on_earnings">
+              Do I have to pay taxes on earnings from Amazon Mechanical Turk?
+            </h3>
+            <p>
+              Please contact your accountant or tax preparer for questions about
+              taxes or your tax obligations.
+            </p>
+            <h3 id="tax_what_information_provided">
+              What information will I need to provide in the tax information
+              interview?
+            </h3>
+            <p>
+              U.S. tax status (U.S. person or non-U.S. person), the name of the
+              individual that will report the income on an income tax return,
+              and permanent residence address.
+            </p>
+            <h3 id="tax_what_is_electronic_signature">
+              What does electronic signature mean?
+            </h3>
+            <p>
+              As part of the registration process, you are required to complete
+              a tax information interview form. Consenting to an electronic
+              signature allows you to sign and submit the form to us
+              electronically by checking the boxes, typing your name, and typing
+              the email address you use to access your account. No special
+              hardware or software is required to provide your electronic
+              signature.
+            </p>
+            <h3 id="tax_consent_electronic_signature">
+              Do I have to consent to provide an electronic signature?
+            </h3>
+            <p>
+              No, an electronic signature is not required. However, if you
+              consent to an electronic signature, you will be able to certify,
+              sign, and submit your form electronically by checking the boxes,
+              typing your name, and typing the email address you use to access
+              your account.
+            </p>
+            <p>
+              If you do not provide consent, you will be required to print a
+              hard copy of your IRS tax form, sign with blue or black ink, and
+              mail to the address below:
+            </p>
+            <p>
+              Amazon<br />
+              Attn: FinOps Tax<br />
+              PO Box 80683<br />
+              Seattle, WA 98108-0683<br />
+              USA
+            </p>
+            <p>
+              Please note that consenting to electronic signature allows Amazon
+              Mechanical Turk to validate your information online, which
+              generally enables you to have your tax information and account
+              processed immediately. If you do not consent to electronic
+              signature, it can take 7 to 10 business days for your form to be
+              processed after being received.
+            </p>
+            <h3 id="tax_can_you_help">
+              Can you help me complete the tax information interview?
+            </h3>
+            <p>
+              You can access helpful content within the tax interview process by
+              clicking on the "Tax Information Interview Guide" in the top right
+              hand corner of the page. We are unable to provide tax advice. For
+              more information on the various tax forms, instructions, and
+              descriptions of which form(s) may be appropriate for you, please
+              refer to the
+              <a href="https://www.irs.gov/" target="_blank"
+                >Internal Revenue Service website (www.irs.gov)</a
+              >
+              or consult an independent U.S. tax advisor.
+            </p>
+            <h3 id="tax_how_long_idv_takes">
+              How long does identity verification take?
+            </h3>
+            <p>
+              Identity verification is an automated process that typically takes
+              a few minutes. You will receive an e-mail when the identity
+              verification process is complete.
+            </p>
+            <h3 id="tax_what_happens_if_idv_fails">
+              What happens if identity verification fails?
+            </h3>
+            <p>
+              If identity verification fails, the decision is final. Workers who
+              are unable to verify their identity will not be able to
+              participate in the MTurk Marketplace.
+            </p>
+            <h3 id="tax_how_are_you_protecting_my_data">
+              How are you protecting my data and my privacy when I use this
+              service?
+            </h3>
+            <p>
+              MTurk is a subsidiary of Amazon.com, as such MTurk follows the
+              same information security practices as Amazon. Any information
+              MTurk collects is subject to the Amazon Privacy Notice, you can
+              read more here:
+              <a href="https://www.mturk.com/privacy-notice" target="_blank"
+                >https://www.mturk.com/privacy-notice</a
+              >.
+            </p>
+            <h2>Tax Information for Non-US Residents</h2>
+            <h3 id="intl_tax_why_tax_info">
+              Why am I asked to provide my tax information?
+            </h3>
+            <p>
+              We require Workers to provide valid taxpayer identification
+              information in order to comply with U.S. tax reporting regulations
+              governed by the U.S. tax authority (Internal Revenue Service or
+              "IRS"). The tax information interview collects the information
+              needed to complete an IRS tax form (e.g. IRS Form W-8) which will
+              be used to certify your non-U.S. status, determine if your
+              earnings are subject to IRS reporting, and the rate of U.S. tax
+              withholding (if any) applicable to your earnings.
+            </p>
+            <h3 id="intl_tax_work_no_form">
+              Can I work on HITs if I don't provide my tax information?
+            </h3>
+            <p>
+              No. We are required to collect this information before you work on
+              HITs in the Mechanical Turk marketplace.
+            </p>
+            <h3 id="intl_tax_us_citizen_live_abroad">
+              I'm a U.S. citizen living outside the U.S. and I am getting the
+              message "Tax Status Not Supported".
+            </h3>
+            <p>
+              Unfortunately, Mechanical Turk currently does not support U.S.
+              persons residing outside the United States.
+            </p>
+            <p>
+              If you selected "Yes" to the U.S. person question in the interview
+              in error, please update your tax information. If you selected
+              "Yes" correctly, you may retake the tax interview if your
+              circumstances change.
+            </p>
+            <h3 id="intl_tax_what_information_provided">
+              What information will I need to provide in the tax information
+              interview?
+            </h3>
+            <p>
+              U.S. tax status (U.S. person or non-U.S. person), the name of the
+              individual that will report the income on an income tax return,
+              and permanent residence address.
+            </p>
+            <h3 id="intl_tax_what_is_electronic_signature">
+              What does electronic signature mean?
+            </h3>
+            <p>
+              As part of the registration process, you are required to complete
+              a tax information interview form. Consenting to an electronic
+              signature allows you to sign and submit the form to us
+              electronically by checking the boxes, typing your name, and typing
+              the email address you use to access your account. No special
+              hardware or software is required to provide your electronic
+              signature.
+            </p>
+            <h3 id="intl_tax_consent_electronic_signature">
+              Do I have to consent to provide an electronic signature?
+            </h3>
+            <p>
+              No, an electronic signature is not required. However, if you
+              consent to an electronic signature, you will be able to certify,
+              sign, and submit your form electronically by checking the boxes,
+              typing your name, and typing the email address you use to access
+              your account.
+            </p>
+            <p>
+              If you do not provide consent, you will be required to print a
+              hard copy of your IRS tax form, sign with blue or black ink, and
+              mail to the address below:
+            </p>
+            <p>
+              Amazon<br />
+              Attn: FinOps Tax<br />
+              PO Box 80683<br />
+              Seattle, WA 98108-0683<br />
+              USA
+            </p>
+            <p>
+              Please note that consenting to electronic signature allows Amazon
+              Mechanical Turk to validate your information online, which
+              generally enables you to have your tax information and account
+              processed immediately. If you do not consent to electronic
+              signature, it can take 7 to 10 business days for your form to be
+              processed after being received.
+            </p>
+            <h3 id="intl_tax_can_you_help">
+              Can you help me complete the tax information interview?
+            </h3>
+            <p>
+              You can access helpful content within the tax interview process by
+              clicking on the "Tax Information Interview Guide" in the top right
+              hand corner of the page. We are unable to provide tax advice. For
+              more information on the various tax forms, instructions, and
+              descriptions of which form(s) may be appropriate for you, please
+              refer to the
+              <a href="https://www.irs.gov/" target="_blank"
+                >Internal Revenue Service website (www.irs.gov)</a
+              >
+              or consult an independent U.S. tax advisor.
+            </p>
+            <h3 id="intl_tax_subject_to_tax_reporting">
+              Will I be subject to U.S. tax reporting by the U.S. tax authority
+              (Internal Revenue Service, "IRS")?
+            </h3>
+            <p>Please consult your accounting or tax advisor to assist.</p>
+            <h3 id="intl_tax_pay_taxes_on_earnings">
+              Do I have to pay taxes on my Mechanical Turk earnings?
+            </h3>
+            <p>Please consult your accounting or tax advisor to assist.</p>
+
+            <h3 id="intl_tax_how_long_idv_takes">
+              How long does identity verification take?
+            </h3>
+            <p>
+              Identity verification is an automated process that typically takes
+              a few minutes. You will receive an e-mail when the identity
+              verification process is complete.
+            </p>
+            <h3 id="intl_tax_what_happens_if_idv_fails">
+              What happens if identity verification fails?
+            </h3>
+            <p>
+              If identity verification fails, the decision is final. Workers who
+              are unable to verify their identity will not be able to
+              participate in the MTurk Marketplace.
+            </p>
+            <h3 id="intl_tax_how_are_you_protecting_my_data">
+              How are you protecting my data and my privacy when I use this
+              service?
+            </h3>
+            <p>
+              MTurk is a subsidiary of Amazon.com, as such MTurk follows the
+              same information security practices as Amazon. Any information
+              MTurk collects is subject to the Amazon Privacy Notice, you can
+              read more here:
+              <a href="https://www.mturk.com/privacy-notice" target="_blank"
+                >https://www.mturk.com/privacy-notice</a
+              >.
+            </p>
+
+            <h2>MTurk Master Worker</h2>
+            <h3 id="what_is_master_worker">
+              What is a Mechanical Turk Master Worker?
+            </h3>
+            <p>
+              A Master Worker is a top Worker of the MTurk marketplace that has
+              been granted the Mechanical Turk Masters Qualification. These
+              Workers have consistently demonstrated a high degree of success in
+              performing a wide range of HITs across a large number of
+              Requesters. We leverage statistical models that analyze all
+              Workers based on several Requester-provided and marketplace data
+              points to make that determination. Some of the key categories of
+              data that are considered to be granted and maintain the Masters
+              Qualification include the Worker's ability to consistently submit
+              high-quality results (as indicated by Requester approval rates and
+              other related factors), marketplace tenure, and variety of work
+              performed. Master Workers have access to work that requires a
+              Masters Qualification.
+            </p>
+            <h3 id="how_receive_masters_qualification">
+              How do I receive the Masters Qualification?
+            </h3>
+            <p>
+              Mechanical Turk automatically grants the Masters Qualification
+              based on statistical models that analyze Worker performance based
+              on several Requester-provided and marketplace data points. Those
+              who score the highest across these key data points are granted the
+              Masters Qualification. Workers cannot apply for this status. To
+              receive the Masters Qualification, try tasks across a variety of
+              Requesters and consistently submit a lot of high quality work.
+            </p>
+            <h3 id="can_masters_qualification_be_revoked">
+              Can the Masters Qualification be revoked?
+            </h3>
+            <p>
+              Yes, the Masters Qualification can be revoked if the Worker's
+              performance declines and he or she no longer scores highest across
+              Requester-provided and marketplace data points, or the Worker
+              otherwise violates our
+              <a href="/worker/participation-agreement" target="_blank"
+                >Participation Agreement</a
+              >. If Workers have the Masters Qualification revoked, they will
+              have an opportunity to improve and will be eligible to regain the
+              Masters Qualification in the future.
+            </p>
+            <h2>Premium Qualifications</h2>
+            <h3 id="how_participate_in_premium_qualifications">
+              How can I participate in the Premium Qualifications feature?
+            </h3>
+            <p>
+              Requesters use Premium Qualifications to access the contributions
+              of those Workers that are best-suited to their workloads. To
+              become eligible to complete HITs that use Premium Qualifications,
+              Workers can complete Profile Information HITs available
+              <a
+                href="https://worker.mturk.com/requesters/AXKBO5V1Y75RL/projects?page_size=20&filters%5Bqualified%5D=false&filters%5Bmasters%5D=false&sort=num_hits_desc&filters%5Bmin_reward%5D=0.00"
+                target="_blank"
+                >here</a
+              >. Please note that some Premium Qualifications are only available
+              for Workers in certain locations.
+            </p>
+            <h3 id="are_profile_tasks_required">
+              Do I have to complete the Profile Information HITs?
+            </h3>
+            <p>
+              No. Providing information via Profile Information HITs is
+              optional. You can complete as many or as few Profile Information
+              HITs as you choose. Certain HITs are only available to Workers who
+              have completed certain Profile Information HITs.
+            </p>
+            <h3 id="how_view_profile_info">
+              Where can I view the Profile information HITs I have submitted?
+            </h3>
+            <p>
+              Once your Profile Information HITs have been processed, which may
+              take up to 30 days, you can view your related Premium
+              Qualifications on the
+              <a
+                href="https://www.mturk.com/mturk/findquals?earned=true&requestable=false"
+                target="_blank"
+                >Qualifications Assigned to You</a
+              >
+              tab.
+            </p>
+            <h3 id="how_update_profile_entries">
+              How can I change or have my Premium Qualifications removed?
+            </h3>
+            <p>
+              Amazon Mechanical Turk will re-publish the Profile Information
+              HITs on a periodic basis. Workers can be granted new Premium
+              Qualifications by changing their responses when re-taking Profile
+              Information HITs. If you want to remove any of your Premium
+              Qualifications at any time, please
+              <a
+                href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+                target="_blank"
+                >contact us</a
+              >
+              and we will remove you from that Premium Qualification.
+            </p>
+            <h3 id="amazon_profile_info_use">
+              How does Amazon Mechanical Turk use my Profile Information HITs?
+            </h3>
+            <p>
+              We use your Profile Information HIT responses to associate Premium
+              Qualifications with your Worker ID, so that Requester HITs
+              requiring those Premium Qualifications can be made available to
+              you. We will not otherwise use this information for any purpose
+              (including marketing purposes) without your consent. You can
+              contact us at any time to opt-out of Premium Qualifications and
+              revoke your consent for us to use the profile information you
+              provided. To learn more about our information practices, please
+              read our
+              <a href="/worker/privacy-notice" target="_blank">Privacy Notice</a
+              >.
+            </p>
+          </div>
+        </div>
+      </main>
+      <!-- footer of the page -->
+      <div class="footer-holder">
+        <div class="container">
+          <!-- contain sidebar of the page -->
+        </div>
+        <footer id="footer">
+          <div class="right-side">
+            <!-- footer logo -->
+            <strong class="logo">
+              <img
+                src="../assets/assets/images/footer-logo.svg"
+                alt="an amazon company"
+              />
+            </strong>
+          </div>
+          <div class="left-side">
+            <!-- footer navigation -->
+            <ul class="menu">
+              <li><a href="/worker/help">Help</a></li>
+              <li>
+                <a
+                  href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+                  >Contact us</a
+                >
+              </li>
+              <li><a href="/worker/legal-licenses">Legal &amp; Licenses</a></li>
+              <li>
+                <a
+                  href="https://www.amazon.jobs/en/team/mechanical-turk"
+                  target="_blank"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/amazonmturk" target="_blank"
+                  >Follow us on Twitter</a
+                >
+              </li>
+              <li>
+                <a href="http://blog.mturk.com" target="_blank">MTurk Blog</a>
+              </li>
+              <li>
+                <a href="https://worker.mturk.com/status/" target="_blank"
+                  >Service Health</a
+                >
+              </li>
+            </ul>
+            <div class="copyright">
+              <p>
+                &copy; 2005-2018, <a href="../worker.html">Amazon Mechanical Turk</a>,
+                Inc. or its affiliates. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

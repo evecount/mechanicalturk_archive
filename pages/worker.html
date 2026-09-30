@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- set content security policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; object-src 'none';"
+    />
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8" />
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Mechanical Turk</title>
+
+    <!-- Start SiteCatalyst code version: H.26. -->
+    <!-- <script src="/assets/js/s_code.js"></script>
+	<script src="/assets/js/omniture.js"></script> -->
+    <!-- Start IE7 Hack -->
+    <!-- <noscript>
+      <img
+        alt=""
+        height="1"
+        src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsmturk/1/H.25.1--NS/0"
+        width="1"
+      />
+    </noscript> -->
+    <!-- End IE7 Hack -->
+    <!-- End SiteCatalyst code version: H.26. -->
+
+    <!-- include the site stylesheet -->
+    <link media="all" rel="stylesheet" href="/assets/css/main.css" />
+    <!-- include jQuery library -->
+    <script src="/assets/js/jquery-3.7.0.min.js" defer></script>
+    <!-- include custom JavaScript -->
+    <script src="/assets/js/jquery.main.js" defer></script>
+
+    <link rel="shortcut_icon" href="/assets/images/favicon.ico" />
+    <link rel="icon" href="/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Maintenance banner -->
+    <div class="maintenance-banner">
+      <div class="maintenance-banner-headline">Mechanical Turk will close September 30, 2026.</div>
+      <div class="maintenance-banner-body">We regularly evaluate our programs, tools, and services and make adjustments based on those assessments. Following an assessment, we've made the decision to close Amazon Mechanical Turk, effective September 30, 2026. Amazon Mechanical Turk will permanently close on September 30, 2026. For Workers and Requesters currently using the service, please visit our <a href="/help">FAQ</a> page to learn how you can prepare for this closure.</div>
+    </div>
+    <!-- main container of all the page elements -->
+    <div id="wrapper">
+      <!-- header of the page -->
+      <header id="header">
+        <div class="header-top">
+          <span>Have work that needs human intelligence?</span>
+          <div class="inline-block">
+            <span
+              ><a href="https://requester.mturk.com/signin_options"
+                >Sign in as a Requester</a
+              >
+              | <a href="/">Learn more</a></span
+            >
+          </div>
+        </div>
+        <div class="header-bottom">
+          <!-- page logo -->
+          <strong class="logo">
+            <a href="/worker">
+              <img
+                src="/assets/images/worker-logo.svg"
+                alt="Amazon Mechanical Turk"
+              />
+            </a>
+          </strong>
+          <!-- main navigation of the page -->
+          <nav class="menu">
+            <a href="#" class="nav-opener"><span></span></a>
+            <div class="nav-drop">
+              <ul id="nav">
+                <li class="active"><a href="/worker">Home</a></li>
+                <li><a href="/worker/how-it-works">How It Works</a></li>
+                <li><a href="/worker/help">Help</a></li>
+              </ul>
+              <a href="https://worker.mturk.com/" class="btn"
+                >Sign in as a Worker</a
+              >
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- contain main informative part of the site -->
+      <main id="main">
+        <div class="visual-block visual-block-lg">
+          <div class="text-block">
+            <h1>
+              Make money in your spare time
+              <span>Get paid for completing simple tasks</span>
+            </h1>
+          </div>
+          <div class="img-holder" id="worker-hero-background-holder"></div>
+        </div>
+        <!-- contain the main content of the page -->
+        <div class="about-us">
+          <div class="container">
+            <div class="info-block gray-line">
+              <p>
+                Want to make money in your spare time? Become an Amazon
+                Mechanical Turk (MTurk) Worker and start applying your skills to
+                the thousands of available tasks in the MTurk marketplace.
+              </p>
+
+              <p>
+                While computing technology continues to improve, there are still
+                many things that people can do much more effectively than
+                computers. These include tasks such as identifying objects in a
+                photo or video, performing data de-duplication, transcribing
+                audio recordings or researching data details.
+              </p>
+            </div>
+          </div>
+          <div class="visual-block visual-block-sm">
+            <strong class="title"
+              >What type of work is available on Amazon Mechanical Turk?</strong
+            >
+            <p>Learn more about common tasks available below</p>
+          </div>
+          <div class="media-section">
+            <div class="container">
+              <div class="media-item">
+                <h1>Image/Video Processing</h1>
+                <p>
+                  While difficult for computers, it is extremely easy for humans
+                  to analyze images. In the past, Workers have helped complete
+                  image processing tasks such as:
+                </p>
+                <div class="media-holder">
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_click2.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Tagging objects found in an image to improve search or
+                        advertising targeting
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_environment1.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Helping companies select the best picture to represent a
+                        product
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_monitoring-logging.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Audit user-uploaded images or videos to moderate content
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_deployment1.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Classifying and identify objects found in satellite
+                        imagery
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media-item">
+                <h1>Data Verification and Clean-up</h1>
+                <p>
+                  Companies with large online directories or catalogs use MTurk
+                  to identify duplicate entries and verify item details. Workers
+                  help clean and verify data by:
+                </p>
+                <div class="media-holder">
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_instance-efficiency.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Removing duplicate content from business listings</p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_discover-app-issues.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Identifying incomplete or duplicate product listings in
+                        a catalog
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_check-logs.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Verifying restaurant details such as phone numbers or
+                        hours of operation
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_api2.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Converting unstructured data about locations into
+                        well-formed addresses
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media-item">
+                <h1>Information Gathering</h1>
+                <p>Workers help companies collect and edit information by:</p>
+                <div class="media-holder">
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_sync.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Answering questions from a computer or mobile device
+                        about any topic
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_version-control2.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Filling out market research or survey data on a variety
+                        of topics
+                      </p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_web-browser.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Writing content for websites</p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_resources-documentation.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>
+                        Finding specific fields or data elements in large legal
+                        and government documents
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="media-item">
+                <h1>Data Processing</h1>
+                <p>
+                  Workers help companies understand and respond to different
+                  types of data by:
+                </p>
+                <div class="media-holder">
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_Natural-Voice.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Editing and transcribing audio content</p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_user.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Translating content from one language to another</p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_search.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Rating the accuracy of search results</p>
+                    </div>
+                  </div>
+                  <div class="media-block">
+                    <div class="img-block">
+                      <img
+                        src="/assets/images/100x100_benefit_workflow2.png"
+                        alt="image description"
+                      />
+                    </div>
+                    <div class="text-block">
+                      <p>Categorizing information based on instructions</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- footer of the page -->
+      <div class="footer-holder">
+        <div class="container">
+          <!-- contain sidebar of the page -->
+        </div>
+        <footer id="footer">
+          <div class="right-side">
+            <!-- footer logo -->
+            <strong class="logo">
+              <img
+                src="/assets/images/footer-logo.svg"
+                alt="an amazon company"
+              />
+            </strong>
+          </div>
+          <div class="left-side">
+            <!-- footer navigation -->
+            <ul class="menu">
+              <li><a href="/help">Help</a></li>
+              <li>
+                <a
+                  href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+                  >Contact us</a
+                >
+              </li>
+              <li><a href="/worker/legal-licenses">Legal &amp; Licenses</a></li>
+              <li>
+                <a
+                  href="https://www.amazon.jobs/en/team/mechanical-turk"
+                  target="_blank"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/amazonmturk" target="_blank"
+                  >Follow us on Twitter</a
+                >
+              </li>
+              <li>
+                <a href="http://blog.mturk.com" target="_blank">MTurk Blog</a>
+              </li>
+              <li>
+                <a href="https://worker.mturk.com/status/" target="_blank"
+                  >Service Health</a
+                >
+              </li>
+            </ul>
+            <div class="copyright">
+              <p>
+                &copy; 2005-2018, <a href="/worker">Amazon Mechanical Turk</a>,
+                Inc. or its affiliates. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
