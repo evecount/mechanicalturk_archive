@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- set content security policy -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self' https://*.awsstatic.com/; font-src 'self' data: https://*.awsstatic.com/; img-src 'self' http://*.awsstatic.com/; object-src 'none'; frame-src https://www.youtube.com;"
+    />
+    <!-- set the encoding of your site -->
+    <meta charset="utf-8" />
+    <!-- set the viewport width and initial-scale on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Mechanical Turk</title>
+
+    <!-- Start SiteCatalyst code version: H.26. -->
+    <!-- <script src="./assets/assets/js/s_code.js"></script>
+	<script src="./assets/assets/js/omniture.js"></script> -->
+    <!-- Start IE7 Hack -->
+    <!-- <noscript>
+      <img
+        alt=""
+        height="1"
+        src="//amazonwebservices.d2.sc.omtrdc.net/b/ss/awsmturk/1/H.25.1--NS/0"
+        width="1"
+      />
+    </noscript> -->
+    <!-- End IE7 Hack -->
+    <!-- End SiteCatalyst code version: H.26. -->
+
+    <!-- include the site stylesheet -->
+    <link media="all" rel="stylesheet" href="./assets/assets/css/main.css" />
+    <!-- include the AWS marketing site stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://a0.awsstatic.com/libra-css/css/1.0.212/style-awsm.css"
+    />
+
+    <!-- include jQuery library -->
+    <script src="./assets/assets/js/jquery-3.7.0.min.js" defer></script>
+    <!-- include custom JavaScript -->
+    <script src="./assets/assets/js/jquery.main.js" defer></script>
+
+    <link rel="shortcut_icon" href="./assets/assets/images/favicon.ico" />
+    <link rel="icon" href="./assets/assets/images/favicon.ico" />
+  </head>
+  <body>
+    <!-- Maintenance banner -->
+    <div class="maintenance-banner">
+      <div class="maintenance-banner-headline">Mechanical Turk will close September 30, 2026.</div>
+      <div class="maintenance-banner-body">We regularly evaluate our programs, tools, and services and make adjustments based on those assessments. Following an assessment, we've made the decision to close Amazon Mechanical Turk, effective September 30, 2026. Amazon Mechanical Turk will permanently close on September 30, 2026. For Workers and Requesters currently using the service, please visit our <a href="./help.html">FAQ</a> page to learn how you can prepare for this closure.</div>
+    </div>
+    <!-- main container of all the page elements -->
+    <div id="wrapper">
+      <!-- header of the page -->
+      <header id="header">
+        <div class="header-top">
+          <span>Looking to work on tasks?</span>
+          <div class="inline-block">
+            <span
+              ><a href="https://worker.mturk.com/">Sign in as a Worker</a> |
+              <a href="./worker.html">Learn more</a></span
+            >
+          </div>
+        </div>
+        <div class="header-bottom">
+          <!-- page logo -->
+          <strong class="logo">
+            <a href="./index.html">
+              <img src="./assets/assets/images/logo.svg" alt="Amazon Mechanical Turk" />
+            </a>
+          </strong>
+          <!-- main navigation of the page -->
+          <nav class="menu">
+            <a href="#" class="nav-opener"><span></span></a>
+            <div class="nav-drop">
+              <ul id="nav">
+                <li><a href="./index.html">Overview</a></li>
+                <li><a href="./product-details.html">Features</a></li>
+                <li><a href="./pricing.html">Pricing</a></li>
+                <li><a href="./help.html">Help</a></li>
+                <li class="active">
+                  <a href="./resources.html">Developer Resources</a>
+                </li>
+                <li><a href="./customers.html">Customers</a></li>
+              </ul>
+              <a href="https://requester.mturk.com/signin_options" class="btn"
+                >Sign in as a Requester</a
+              >
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- contain main informative part of the site -->
+      <main id="main">
+        <!-- contain the main content of the page -->
+        <div class="container">
+          <section class="resources content-section">
+            <h1>Developer Resources</h1>
+            <div class="resources-holder">
+              <div class="info-block">
+                <h2>Documentation &amp; Support</h2>
+                <ul class="resources-list">
+                  <li>
+                    <a
+                      href="https://github.com/awslabs/mturk-code-samples"
+                      target="_blank"
+                      >Sample Code</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/Welcome.html"
+                      target="_blank"
+                      >Developer Guide</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/Welcome.html"
+                      target="_blank"
+                      >API Documentation</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://forums.aws.amazon.com/forum.jspa?forumID=11"
+                      target="_blank"
+                      >Requester Forum</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+                      >Contact Us</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div
+              class="lb-mid-small-pad lb-none-v-margin lb-grid background-light-grey"
+            >
+              <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24">
+                  <h2 id="SDKs" class="lb-txt-bold lb-txt-32 lb-h2 lb-title">
+                    SDKs
+                  </h2>
+                  <div class="lb-rtxt">
+                    <p>
+                      Simplify using Amazon Mechanical Turk in your applications
+                      with an API tailored to your programming language or
+                      platform.<br />
+                    </p>
+                  </div>
+                  <div
+                    class="lb-mid-small-pad lb-blk-grid-wrap margin-bottom-0 margin-top-0"
+                  >
+                    <div
+                      class="lb-blk-grid lb-row-max-large lb-snap lb-gutter-small lb-vgutter-small lb-tiny-blk-1 lb-small-blk-2 lb-mid-blk-3"
+                    >
+                      <div>
+                        <h3
+                          id="Android"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          Android
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="SDK_icons-04"
+                                    title="SDK_icons-04"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-04.74c6ecde0eb3a17d25790ba740ceb369bb489d0e.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://sdk-for-android.amazonwebservices.com/latest/aws-android-sdk.zip"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkforandroid/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkforandroid/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id="Java"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          Java
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="Java"
+                                    title="Java"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-13.7d8644e81120c22f4d253cb7ff921e5fbe36bafa.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://sdk-for-java.amazonwebservices.com/latest/aws-java-sdk.zip"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkforjava/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkforjava/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id="PHP"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          PHP
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="php"
+                                    title="php"
+                                    src="//d1.awsstatic.com/Getting%20Started/icons-language/v2/SDK_icons-05.6faf26e87e795e74c3256d0ec511d59f8cbb671e.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://docs.amazonwebservices.com/awssdkdocsphp2/latest/gettingstartedguide/sdk-php2-installing-the-sdk.html"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkforphp2/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkforphp/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3
+                          id="JavaScript"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          JavaScript
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="JavaScript"
+                                    title="JavaScript"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-02.457c66686b0cf6f8dd69eb03af98ebee9d966fd8.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdk-for-browser/"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/sdk-for-browser/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-intro.html"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id=".NET"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          .NET
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt=".NET"
+                                    title=".NET"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-06.5dd6c3b00e3c64541a230ca9be2f2cc678a02a90.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://sdk-for-net.amazonwebservices.com/latest/AWSToolsAndSDKForNet.msi"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkfornet/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkfornet/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id="Ruby"
+                          class="lb-txt-light lb-txt-none lb-txt-14 lb-h3 lb-title"
+                        >
+                          Ruby
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="Ruby"
+                                    title="Ruby"
+                                    src="//d1.awsstatic.com/Getting%20Started/icons-language/v2/SDK_icons-07.e19b0b7885f0a365ae84d937bb9b034ed66bb378.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://docs.aws.amazon.com/AWSSdkDocsRuby/latest/DeveloperGuide/ruby-dg-setup.html"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkforruby/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkforruby/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <h3
+                          id="iOS"
+                          class="lb-txt-light lb-txt-14 lb-h3 lb-title"
+                        >
+                          iOS
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="iOS"
+                                    title="iOS"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-15.64b1a760b62b1292d770b89662a08f5c3cb1dc76.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://sdk-for-ios.amazonwebservices.com/latest/aws-ios-sdk.zip"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://aws.amazon.com/documentation/sdkforios/"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkforios/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id="Node.js"
+                          class="lb-txt-light lb-txt-14 lb-h3 lb-title"
+                        >
+                          Node.js
+                        </h3>
+                        <div class="lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="node.js"
+                                    title="node.js"
+                                    src="//d1.awsstatic.com/Test%20Images/Kate%20Test%20Images/SDK_icons-14.02d2e9c0976a0777af9ec363ced126a644eeb8b8.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-intro.html"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <br />
+                                  <a
+                                    href="http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/node-intro.html"
+                                    target="_blank"
+                                    >Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://aws.amazon.com/sdkfornodejs/"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <h3
+                          id="Python"
+                          class="lb-txt-light lb-txt-14 lb-h3 lb-title"
+                        >
+                          Python
+                        </h3>
+                        <div class="lb-border-top lb-tiny-radius lb-box">
+                          <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                            <div class="lb-col lb-tiny-24 lb-mid-8">
+                              <figure class="lb-img">
+                                <div>
+                                  <img
+                                    alt="Python"
+                                    title="Python"
+                                    src="//d1.awsstatic.com/Getting%20Started/icons-language/v2/SDK_icons-03.0c36602b6d35f1e76d8b8e831e0ccf9453dc357b.png"
+                                  />
+                                </div>
+                              </figure>
+                            </div>
+                            <div class="lb-col lb-tiny-24 lb-mid-16">
+                              <div class="lb-txt-bold lb-rtxt">
+                                <div>
+                                  <a
+                                    href="http://github.com/boto/boto#installation"
+                                    target="_blank"
+                                    >Install</a
+                                  >
+                                  <a
+                                    href="http://docs.pythonboto.org/en/latest/"
+                                    target="_blank"
+                                    ><br />
+                                    Documentation</a
+                                  >
+                                </div>
+                                <div>
+                                  <a
+                                    href="http://github.com/boto/boto/blob/develop/README.rst#boto"
+                                    target="_blank"
+                                    >Learn More</a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="lb-grid lb-row lb-row-max-large lb-snap">
+              <div class="lb-col lb-tiny-24 lb-mid-24">
+                <h2
+                  id="Video_Presentations"
+                  class="lb-txt-bold lb-txt-black lb-txt-32 lb-h2 lb-title"
+                >
+                  Video Presentations
+                </h2>
+                <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                  <div class="lb-col lb-tiny-24 lb-mid-12">
+                    <div class="lb-box">
+                      <h3
+                        id="HarnessThePower"
+                        class="lb-txt-none lb-h4 lb-title"
+                      >
+                        Harness the Power of Crowdsourcing with Amazon
+                        Mechanical Turk
+                      </h3>
+                      <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div
+                            class="lb-video lb-video-p"
+                            data-lb-comp="video"
+                            data-placement="inPlace"
+                            data-youtube-id="cv4DJkmGzIw"
+                            data-source="youtube"
+                            data-video-title="Harness the Power of Crowdsourcing with Amazon Mechanical Turk"
+                          >
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src="https://www.youtube.com/embed/cv4DJkmGzIw"
+                              frameborder="0"
+                              allow="encrypted-media"
+                            >
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div class="lb-rtxt">
+                            <p>
+                              In this talk, we cover key concepts for Mechanical
+                              Turk and share best practices for how to integrate
+                              and scale your crowdsourced application. By the
+                              end of this talk, expect to have a general
+                              understanding of Mechanical Turk and how to get
+                              started harnessing the power of the crowd. (55:02)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lb-box">
+                      <h3
+                        id="Humans_Vs_Machines"
+                        class="lb-txt-none lb-h4 lb-title"
+                      >
+                        Humans vs. the Machines: How Pinterest Uses the Amazon
+                        Mechanical Turk Worker Community to Improve Machine
+                        Learning
+                      </h3>
+                      <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div
+                            class="lb-video lb-video-p"
+                            data-lb-comp="video"
+                            data-placement="inPlace"
+                            data-youtube-id="cgVEb8drOCY"
+                            data-source="youtube"
+                            data-video-title="Humans vs. the Machines: How Pinterest Uses the Amazon Mechanical Turk Worker Community to Improve Machine Learning"
+                          >
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src="https://www.youtube.com/embed/cgVEb8drOCY"
+                              frameborder="0"
+                              allow="encrypted-media"
+                            >
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div class="lb-rtxt">
+                            <p>
+                              In this video, we explore how Pinterest adapted to
+                              an increased reliability on human evaluation to
+                              improve their product, with a focus on how they’ve
+                              integrated with Amazon Mechanical Turk’s platform.
+                              The discussion focuses on the analysis and product
+                              decisions related to building a high quality
+                              crowdsourcing system that takes advantage of
+                              Amazon Mechanical Turk’s powerful worker
+                              community. (35:17)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lb-col lb-tiny-24 lb-mid-12">
+                    <div class="lb-box">
+                      <h3
+                        id="BusinessProcessAutomation"
+                        class="lb-txt-none lb-h4 lb-title"
+                      >
+                        Business Process Automation Using Crowdsourcing
+                      </h3>
+                      <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div
+                            class="lb-video lb-video-p"
+                            data-lb-comp="video"
+                            data-placement="inPlace"
+                            data-youtube-id="Z_TPU-RYmg4"
+                            data-source="youtube"
+                            data-video-title="Business Process Automation Using Crowdsourcing"
+                          >
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src="https://www.youtube.com/embed/Z_TPU-RYmg4"
+                              frameborder="0"
+                              allow="encrypted-media"
+                            >
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div class="lb-rtxt">
+                            <p>
+                              In this talk, learn how enterprises are using
+                              Mechanical Turk to scale and automate their
+                              human-powered workflow. (1:01:53)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lb-box">
+                      <h3
+                        id="Training_Chatobots"
+                        class="lb-txt-none lb-h4 lb-title"
+                      >
+                        Training Chatbots and Conversational Intelligence Agents
+                        with Amazon Mechanical Turk and Facebook's ParlAI
+                      </h3>
+                      <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div
+                            class="lb-video lb-video-p"
+                            data-lb-comp="video"
+                            data-placement="inPlace"
+                            data-youtube-id="HPt-iklBPOM"
+                            data-source="youtube"
+                            data-video-title="raining Chatbots and Conversational Intelligence Agents with Amazon Mechanical Turk and Facebook's ParlAI"
+                          >
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src="https://www.youtube.com/embed/HPt-iklBPOM"
+                              frameborder="0"
+                              allow="encrypted-media"
+                            >
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div class="lb-rtxt">
+                            <p>
+                              DigitalGlobe | Radiant's (now Radiant Solutions)
+                              Tomnod service uses Amazon Mechanical Turk, a
+                              crowdsourcing internet platform, to identify small
+                              objects appearing in large areas of new satellite
+                              imagery. Tomnod is heavily used for commercial and
+                              humanitarian purposes. In this presentation, you
+                              hear how Radiant Solutions uses crowdsourcing to
+                              help solve large-scale computer vision and machine
+                              learning problems. (28:44)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="lb-col lb-tiny-24 lb-mid-12">
+                    <div class="lb-box">
+                      <h3
+                        id="An_Eye_In_The_Sky"
+                        class="lb-txt-none lb-h4 lb-title"
+                      >
+                        An Eye in the Sky: How Radiant Solutions Processes
+                        Satellite Imagery with AI and Amazon Mechanical Turk
+                      </h3>
+                      <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div
+                            class="lb-video lb-video-p"
+                            data-lb-comp="video"
+                            data-placement="inPlace"
+                            data-youtube-id="prpDfnguAY8"
+                            data-source="youtube"
+                            data-video-title="An Eye in the Sky: How Radiant Solutions Processes Satellite Imagery with AI and Amazon Mechanical Turk"
+                          >
+                            <iframe
+                              width="100%"
+                              height="100%"
+                              src="https://www.youtube.com/embed/prpDfnguAY8"
+                              frameborder="0"
+                              allow="encrypted-media"
+                            >
+                            </iframe>
+                          </div>
+                        </div>
+                        <div class="lb-col lb-tiny-24 lb-mid-12">
+                          <div class="lb-rtxt">
+                            <p>
+                              In this video, learn how researchers at Facebook
+                              use Amazon Mechanical Turk within the ParlAI
+                              (pronounced “parlay”) framework for training and
+                              evaluating AI models to perform data collection,
+                              human training, and human evaluation. Learn how
+                              you can use this interface to gather high-quality
+                              training data to build next-generation chatbots
+                              and conversational agents. (54:40)
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="lb-mid-small-pad lb-none-v-margin lb-grid background-light-grey margin-bottom-10"
+            >
+              <div class="lb-row lb-row-max-large lb-snap">
+                <div class="lb-col lb-tiny-24 lb-mid-24">
+                  <h1
+                    id="Blog_Posts"
+                    class="lb-txt-bold lb-h1 lb-title color-squid-ink"
+                  >
+                    Blog Posts
+                  </h1>
+                  <div class="lb-grid lb-row lb-row-max-large lb-snap">
+                    <div class="lb-col lb-tiny-24 lb-mid-12">
+                      <div
+                        class="lb-border-p lb-box padding-top-0 padding-bottom-0 border-color-c0"
+                      >
+                        <div
+                          class="lb-none-v-margin lb-grid lb-row lb-row-max-large lb-snap"
+                        >
+                          <div class="lb-col lb-tiny-24 lb-mid-6">
+                            <figure class="lb-img">
+                              <div class="lb-round-radius">
+                                <span class="lb-round-radius">
+                                  <img
+                                    class="blog-icon"
+                                    alt="Amazon Mechanical Turk Blog"
+                                    title="Amazon Mechanical Turk Blog"
+                                    src="https://d1.awsstatic.com/whiteboard-graphics/aws/icons/blog.3d63513cd893f262f86e2587df307866a158180e.png"
+                                /></span>
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="lb-col lb-tiny-24 lb-mid-18">
+                            <div class="lb-rtxt">
+                              <p>
+                                <i
+                                  ><b
+                                    ><a
+                                      href="https://blog.mturk.com/using-mturk-with-amazon-sagemaker-for-supervised-learning-ml-bc30f94e1c0d"
+                                      target="_blank"
+                                      >Using MTurk with Amazon SageMaker for
+                                      Supervised Learning (ML)
+                                    </a></b
+                                  ></i
+                                ><br />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="lb-border-p lb-box padding-top-0 padding-bottom-0 border-color-c0"
+                      >
+                        <div
+                          class="lb-none-v-margin lb-grid lb-row lb-row-max-large lb-snap"
+                        >
+                          <div class="lb-col lb-tiny-24 lb-mid-6">
+                            <figure class="lb-img">
+                              <div class="lb-round-radius">
+                                <span class="lb-round-radius">
+                                  <img
+                                    class="blog-icon"
+                                    alt="Amazon Mechanical Turk Blog"
+                                    title="Amazon Mechanical Turk Blog"
+                                    src="https://d1.awsstatic.com/whiteboard-graphics/aws/icons/blog.3d63513cd893f262f86e2587df307866a158180e.png"
+                                /></span>
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="lb-col lb-tiny-24 lb-mid-18">
+                            <div class="lb-rtxt">
+                              <p>
+                                <i
+                                  ><b
+                                    ><a
+                                      href="https://blog.mturk.com/tutorial-using-the-mturk-api-with-the-react-javascript-library-96f1bc539600"
+                                      target="_blank"
+                                      >Using the MTurk API with the React
+                                      Javascript Library</a
+                                    ></b
+                                  ></i
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="lb-col lb-tiny-24 lb-mid-12">
+                      <div
+                        class="lb-border-p lb-box padding-top-0 padding-bottom-0 border-color-c0"
+                      >
+                        <div
+                          class="lb-none-v-margin lb-grid lb-row lb-row-max-large lb-snap"
+                        >
+                          <div class="lb-col lb-tiny-24 lb-mid-6">
+                            <figure class="lb-img">
+                              <div class="lb-round-radius">
+                                <span class="lb-round-radius">
+                                  <img
+                                    class="blog-icon"
+                                    alt="Amazon Mechanical Turk Blog"
+                                    title="Amazon Mechanical Turk Blog"
+                                    src="https://d1.awsstatic.com/whiteboard-graphics/aws/icons/blog.3d63513cd893f262f86e2587df307866a158180e.png"
+                                /></span>
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="lb-col lb-tiny-24 lb-mid-18">
+                            <div class="lb-rtxt">
+                              <p>
+                                <i
+                                  ><a
+                                    href="https://blog.mturk.com/tutorial-a-beginners-guide-to-crowdsourcing-ml-training-data-with-python-and-mturk-d8df4bdf2977"
+                                    target="_blank"
+                                    ><b
+                                      >A beginner's guide to crowdsourcing ML
+                                      training data with Python and MTurk</b
+                                    ></a
+                                  ></i
+                                ><br />
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="lb-border-p lb-box padding-top-0 padding-bottom-0 border-color-c0"
+                      >
+                        <div
+                          class="lb-none-v-margin lb-grid lb-row lb-row-max-large lb-snap"
+                        >
+                          <div class="lb-col lb-tiny-24 lb-mid-6">
+                            <figure class="lb-img">
+                              <div class="lb-round-radius">
+                                <span class="lb-round-radius">
+                                  <img
+                                    class="blog-icon"
+                                    alt="Amazon Mechanical Turk Blog"
+                                    title="Amazon Mechanical Turk Blog"
+                                    src="https://d1.awsstatic.com/whiteboard-graphics/aws/icons/blog.3d63513cd893f262f86e2587df307866a158180e.png"
+                                /></span>
+                              </div>
+                            </figure>
+                          </div>
+                          <div class="lb-col lb-tiny-24 lb-mid-18">
+                            <div class="lb-rtxt">
+                              <p>
+                                <i
+                                  ><b
+                                    ><a
+                                      href="https://blog.mturk.com/tutorial-mturk-using-python-in-jupyter-notebook-17ba0745a97f"
+                                      target="_blank"
+                                      >MTurk using Python in Jupyter Notebook</a
+                                    ></b
+                                  ></i
+                                >
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!-- footer of the page -->
+      <div class="footer-holder">
+        <div class="container">
+          <!-- contain sidebar of the page -->
+        </div>
+        <footer id="footer">
+          <div class="right-side">
+            <!-- footer logo -->
+            <strong class="logo">
+              <img
+                src="./assets/assets/images/footer-logo.svg"
+                alt="an amazon company"
+              />
+            </strong>
+          </div>
+          <div class="left-side">
+            <!-- footer navigation -->
+            <ul class="menu">
+              <li><a href="./help.html">Help</a></li>
+              <li>
+                <a
+                  href="https://support.aws.amazon.com/#/contacts/aws-mechanical-turk"
+                  >Contact us</a
+                >
+              </li>
+              <li><a href="./legal-licenses.html">Legal &amp; Licenses</a></li>
+              <li>
+                <a
+                  href="https://www.amazon.jobs/en/team/mechanical-turk"
+                  target="_blank"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/amazonmturk" target="_blank"
+                  >Follow us on Twitter</a
+                >
+              </li>
+              <li>
+                <a href="http://blog.mturk.com" target="_blank">MTurk Blog</a>
+              </li>
+              <li>
+                <a href="https://requester.mturk.com/status/" target="_blank"
+                  >Service Health</a
+                >
+              </li>
+            </ul>
+            <div class="copyright">
+              <p>
+                &copy; 2005-2018, <a href="./index.html">Amazon Mechanical Turk</a>, Inc.
+                or its affiliates. All rights reserved.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
